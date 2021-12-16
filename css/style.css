@@ -1,0 +1,128 @@
+body{
+    background-color: #a9a9a9;
+    color: #74513D ;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+.navbar{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #d9d9d9 !important;
+    border-radius: 4px;
+}
+.dropdown-item{
+    background-color: #d9d9d9;
+    color: #74513D;
+}
+.dropdown-menu.show{
+    background-color: #d9d9d9;
+}
+.container-carousel{
+    width: 60%;
+    margin-top: 30px;
+}
+a{
+    color: #74513D !important;
+    font-size: 20px;
+}
+
+.container__txt{
+    margin-top: 30px;
+    background-color: #d9d9d9;
+    border-radius: 4px;
+    
+}
+
+.d-flex{
+    flex-wrap: wrap !important;
+}
+.footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #d9d9d9 !important;
+    border-radius: 4px;
+}
+
+
+h1 {
+    margin-bottom: 40px
+}
+
+label {
+    color: #333
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
+
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+/* fotos hoover */
+
+.container__index{
+    margin: 10px;
+    padding: 10px;
+    left: 10px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .container__img {
+    padding: 10px;
+    position: relative;
+    width: 50%;
+    border-radius: 2px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #BFBFBD;
+  }
+  
+  .container__img:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: #8f8272;
+    font-size: 25px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
