@@ -1,128 +1,144 @@
-body{
-    background-color: #a9a9a9;
-    color: #74513D ;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 25px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
-.navbar{
-    margin-top: 20px;
-    width: 100%;
-    background-color: #d9d9d9 !important;
-    border-radius: 4px;
+body {
+  font-family: "Fanwood Text", serif;
+  background-color: #BFBFBD;
 }
-.dropdown-item{
-    background-color: #d9d9d9;
-    color: #74513D;
+
+.header {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  background-color: #D9D9D9;
+  border-radius: 4px;
 }
-.dropdown-menu.show{
-    background-color: #d9d9d9;
+.header .h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: #D8AA55;
+  font-size: 35px;
+  margin-bottom: 15px;
 }
-.container-carousel{
-    width: 60%;
-    margin-top: 30px;
-}
-a{
-    color: #74513D !important;
+@media (max-width: 768px) {
+  .header .h1 {
     font-size: 20px;
-}
-
-.container__txt{
-    margin-top: 30px;
-    background-color: #d9d9d9;
-    border-radius: 4px;
-    
-}
-
-.d-flex{
-    flex-wrap: wrap !important;
-}
-.footer{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    background-color: #d9d9d9 !important;
-    border-radius: 4px;
-}
-
-
-h1 {
-    margin-bottom: 40px
-}
-
-label {
-    color: #333
-}
-
-.btn-send {
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    width: 80%;
-    margin-left: 3px
-}
-
-.help-block.with-errors {
-    color: #ff5050;
-    margin-top: 5px
-}
-
-.card {
-    margin-left: 10px;
-    margin-right: 10px
-}
-
-/* fotos hoover */
-
-.container__index{
-    margin: 10px;
-    padding: 10px;
-    left: 10px;
-    width: 1200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
-  
-  .container__img {
-    padding: 10px;
-    position: relative;
-    width: 50%;
-    border-radius: 2px;
+}
+.header .nav {
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .header .nav {
+    font-size: 10px;
   }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
+}
+.header ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.header a {
+  text-decoration: none;
+  color: #74513D;
+}
+.header a:hover {
+  font-size: 30px;
+  color: #D8AA55;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .header a:hover {
+    font-size: 20px;
   }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #BFBFBD;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.container .container__img {
+  background-color: #D9D9D9;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  .container .container__img {
+    padding: 15px;
   }
-  
-  .container__img:hover .overlay {
-    opacity: 1;
+}
+.container img {
+  width: 100%;
+  align-self: center;
+}
+.container p {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #74513D;
+}
+.container p:hover {
+  color: #D8AA55;
+}
+@media (max-width: 768px) {
+  .container p {
+    font-size: 10px;
   }
-  
-  .text {
-    color: #8f8272;
-    font-size: 25px;
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+}
+
+.footer {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  background-color: #D9D9D9;
+  border-radius: 4px;
+}
+.footer .content__footer {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footer .content__footer h2 {
+  margin-top: 10px;
+  color: #D8AA55;
+}
+.footer .content__footer h2:hover {
+  font-size: 35px;
+}
+@media (max-width: 768px) {
+  .footer .content__footer h2 {
+    font-size: 20px;
   }
+}
+.footer .text__footer {
+  width: 30%;
+  font-size: 15px;
+  color: #74513D;
+}
+@media (max-width: 768px) {
+  .footer .text__footer {
+    font-size: 10px;
+  }
+}
+.footer .text__footer:hover {
+  font-size: 20px;
+}
+.footer .redes {
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 768px) {
+  .footer .redes img {
+    width: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

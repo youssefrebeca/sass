@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+@import "colors";
+@import "font";
+
+
+//header//
+body{
+    font-family: $font;
+    background-color: $background-color;
+}
+.header{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: $box-color;
+    border-radius: 4px;
+    
+    .h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        color: $title-color;
+        font-size: $title-size;
+        margin-bottom: 15px;
+        @media (max-width: 768px){
+            font-size: $title-mobile;
+
+        }
+        
+    }
+    .nav{
+        font-size: $text-size;
+        @media (max-width: 768px){
+            font-size: $text-mobile;
+        }
+        
+    }
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: $text-color;
+        &:hover{
+            font-size: $nav-size;
+            color: $title-color;
+            text-decoration:underline;
+            @media (max-width: 768px){
+                font-size: $nav-mobile;
+            }
+        }
+    }
+}
+
+//boddy//
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    .container__img{
+        background-color: $box-color;
+        border-radius: 4px;
+        margin: 10px;
+        padding: 30px;
+        @media (max-width: 768px){
+            padding: 15px;
+        }
+    }
+    img{
+        width: 100%;
+        align-self: center;
+    }
+    p{
+        margin-top: 5px;
+        font-size: $text-size;
+        color: $text-color;
+        &:hover{
+            color: $title-color;
+        }
+        @media (max-width: 768px){
+            font-size: $text-mobile;
+        }
+    }
+}
+
+//footer//
+.footer{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: $box-color;
+    border-radius: 4px;
+
+    .content__footer{
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        h2{
+            margin-top: 10px;
+            color: $title-color;
+            &:hover{
+                font-size: $title-size;
+
+            }
+            @media (max-width: 768px){
+                font-size: $title-mobile;
+            }
+        }
+    }
+    .text__footer{
+        width: 30%;
+        font-size: $text-footer;
+        color: $text-color;
+        @media (max-width: 768px){
+            font-size: $text-footerMobile;
+        }
+        &:hover{
+            font-size: $text-size;
+        }
+    }
+    .redes{
+        display: flex;
+        justify-content: end;
+        @media (max-width: 768px){
+            img{
+                width: 20px;
+            }
+        }
+    }
+
+}
